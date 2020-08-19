@@ -3,4 +3,4 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/yaap/apex
 
 PRODUCT_PACKAGES += \
-    ModuleMetadataGooglePrebuilt
+    ModuleMetadataGoogle
