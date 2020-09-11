@@ -1,6 +1,2 @@
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/yaap/apex
-
-PRODUCT_PACKAGES += \
-    ModuleMetadataGoogle
+# Inherit from apex config
+$(call inherit-product, vendor/prebuilts/config/apex.mk)
