@@ -18,6 +18,9 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/prebuilts/apex
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/prebuilts/apex/overlay
+
 # ModuleMetadata
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
