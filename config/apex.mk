@@ -41,11 +41,13 @@ PRODUCT_PACKAGES += \
     com.google.android.resolv \
     com.google.android.sdkext \
     com.google.android.telephony \
+    com.google.android.tethering \
     com.google.android.tzdata2 \
     com.google.android.wifi
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/prebuilts/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    vendor/prebuilts/sepolicy/private
 
 # Sysconfig
 PRODUCT_PACKAGES += \
