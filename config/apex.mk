@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Networkstack certificate
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/prebuilts/apex/NetworkStack
+
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/prebuilts/apex
@@ -47,7 +50,7 @@ PRODUCT_PACKAGES += \
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    vendor/prebuilts/sepolicy/private
+    vendor/prebuilts/apex/sepolicy/private
 
 # Sysconfig
 PRODUCT_PACKAGES += \
