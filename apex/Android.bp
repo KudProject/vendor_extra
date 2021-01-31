@@ -160,3 +160,20 @@ prebuilt_apex {
     owner: "google",
     prefer: true,
 }
+
+prebuilt_etc {
+    name: "google-rollback-package-whitelist",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "google-rollback-package-whitelist.xml",
+    filename_from_src: true,
+}
+
+
+prebuilt_etc {
+    name: "google-staged-installer-whitelist",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "google-staged-installer-whitelist.xml",
+    filename_from_src: true,
+}

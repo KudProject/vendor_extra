@@ -43,3 +43,8 @@ PRODUCT_PACKAGES += \
     com.google.android.telephony \
     com.google.android.tzdata2 \
     com.google.android.wifi
+
+# Sysconfig
+PRODUCT_PACKAGES += \
+    google-rollback-package-whitelist \
+    google-staged-installer-whitelist
