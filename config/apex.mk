@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
     com.google.android.tzdata2 \
     com.google.android.wifi
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/prebuilts/sepolicy/private
+
 # Sysconfig
 PRODUCT_PACKAGES += \
     google-rollback-package-whitelist \
