@@ -1,0 +1,14 @@
+<!--
+  ~ Copyright (C) 2021 KudProject Development
+  ~ SPDX-License-Identifier: Apache-2.0
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+        Optional placeholders replaced at runtime:
+          {device} - Device name
+          {type} - Build type
+          {incr} - Incremental version
+    -->
+    <string name="updater_server_url" translatable="false">https://kudnet.id/ota/dot11/{device}/builds.json</string>
+    <string name="updater_server_url_gapps" translatable="false">https://kudnet.id/ota/dot11/{device}/builds_gapps.json</string>
+</resources>
