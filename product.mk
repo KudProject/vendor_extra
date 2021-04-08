@@ -11,3 +11,7 @@ ifeq ($(TARGET_SUPPORTS_BLUR),true)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.sf.disable_blurs=1
 endif
+
+# Include all packages in this project
+PRODUCT_PACKAGES += \
+    OpenCamera

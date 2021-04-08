@@ -1,0 +1,16 @@
+// Copyright (C) 2021 KudProject Development
+// SPDX-License-Identifier: Apache-2.0
+
+// Open Camera - F-Droid version
+android_app_import {
+	name: "OpenCamera",
+	apk: "app/OpenCamera/OpenCamera.apk",
+	presigned: true,
+	product_specific: true,
+	overrides: [
+		"Camera2",
+		"GCam",
+		"GCamGOPrebuilt",
+		"Snap",
+	],
+}
