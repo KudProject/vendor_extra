@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/prebuilts/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/prebuilts/sepolicy/vendor
 
 # Sysconfig
 PRODUCT_PACKAGES += \
