@@ -21,8 +21,10 @@ PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/prebuilts/apex/NetworkStack
 PRODUCT_SOONG_NAMESPACES += \
     vendor/prebuilts/apex
 
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/prebuilts/apex/overlay
+# Overlay
+PRODUCT_PACKAGES += \
+    ApexOverlay \
+    ApexSettingsOverlay
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
