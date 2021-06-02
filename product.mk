@@ -24,4 +24,6 @@ endif
 
 # Include all packages in this project
 PRODUCT_PACKAGES += \
-    OpenCamera
+    OpenCamera \
+    TrichromeChrome \
+    TrichromeWebView
