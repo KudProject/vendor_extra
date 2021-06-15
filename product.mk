@@ -13,9 +13,6 @@ endif
 endif
 endif
 
-# Include targeted ROM overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/extra/overlay-$(VENDOR_OS)
-
 # Disable blur by default
 ifeq ($(TARGET_SUPPORTS_BLUR),true)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -27,3 +24,8 @@ PRODUCT_PACKAGES += \
     OpenCamera \
     TrichromeChrome \
     TrichromeWebView
+
+ifeq ($(VENDOR_OS),dot)
+PRODUCT_PACKAGES += \
+    DotSystemUpdatesOverlay
+endif
