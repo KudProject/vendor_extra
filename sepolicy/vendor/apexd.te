@@ -1,0 +1,3 @@
+allow apexd {
+    sysfs_mmc_host
+}:file { setattr rw_file_perms };
