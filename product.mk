@@ -18,7 +18,7 @@ ifeq ($(WITH_GAPPS),true)
 ifeq ($(filter true,$(OVERRIDE_TARGET_FLATTEN_APEX) $(TARGET_FLATTEN_APEX)),)
 ifeq ($(TARGET_FLATTEN_APEX),false)
 $(warning Building with Google APEX modules)
-$(call inherit-product-if-exists, vendor/prebuilts/config/apex.mk)
+$(call inherit-product, vendor/extra/config/apex.mk)
 endif
 endif
 endif

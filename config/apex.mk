@@ -16,7 +16,7 @@
 
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/prebuilts/apex
+    vendor/extra/apex
 
 # Overlay
 PRODUCT_PACKAGES += \
@@ -45,8 +45,8 @@ PRODUCT_PACKAGES += \
     com.google.android.wifi
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/prebuilts/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/prebuilts/sepolicy/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/extra/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/extra/sepolicy/vendor
 
 # Sysconfig
 PRODUCT_PACKAGES += \
