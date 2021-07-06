@@ -13,14 +13,19 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
-# Inherit Google APEX configuration
 ifeq ($(WITH_GAPPS),true)
+
+# Inherit Google APEX configuration
 ifeq ($(filter true,$(OVERRIDE_TARGET_FLATTEN_APEX) $(TARGET_FLATTEN_APEX)),)
 ifeq ($(TARGET_FLATTEN_APEX),false)
 $(warning Building with Google APEX modules)
 $(call inherit-product, vendor/extra/config/apex.mk)
 endif
 endif
+
+# Inherit Google Carrier configuration
+$(call inherit-product, vendor/extra/config/carrier.mk)
+
 endif
 
 # Disable blur by default
