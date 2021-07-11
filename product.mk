@@ -28,6 +28,9 @@ $(call inherit-product, vendor/extra/config/carrier.mk)
 
 endif
 
+# Inherit Red Hat Fonts if present
+$(call inherit-product-if-exists, external/redhat-fonts/fonts.mk)
+
 # Disable blur by default
 ifeq ($(TARGET_SUPPORTS_BLUR),true)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
