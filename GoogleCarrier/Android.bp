@@ -17,6 +17,7 @@ android_app_import {
 	name: "CarrierSettings",
 	owner: "extra",
 	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+	overrides: ["CarrierConfig"],
 	presigned: true,
 	privileged: true,
 	product_specific: true,

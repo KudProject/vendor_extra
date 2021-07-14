@@ -127,4 +127,4 @@ product/etc/CarrierSettings/vodafone_nl.pb
 product/etc/CarrierSettings/vodafone_tr.pb
 product/etc/CarrierSettings/windtre_it.pb
 product/etc/CarrierSettings/xfinity_us.pb
--product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
+-product/priv-app/CarrierSettings/CarrierSettings.apk;OVERRIDES=CarrierConfig;PRESIGNED
