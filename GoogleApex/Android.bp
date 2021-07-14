@@ -1,0 +1,135 @@
+// Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+// Copyright (C) 2021 KudProject Development
+// SPDX-License-Identifier: Apache-2.0
+
+soong_namespace {
+}
+
+android_app_import {
+	name: "ModuleMetadataGoogle",
+	owner: "extra",
+	apk: "proprietary/product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk",
+	overrides: ["ModuleMetadata"],
+	presigned: true,
+	product_specific: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.adbd",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.adbd.apex",
+	overrides: ["com.android.adbd"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.conscrypt",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.conscrypt.apex",
+	overrides: ["com.android.conscrypt"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.extservices",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.extservices.apex",
+	overrides: ["com.android.extservices"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.ipsec",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.ipsec.apex",
+	overrides: ["com.android.ipsec"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.media",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.media.apex",
+	overrides: ["com.android.media"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.media.swcodec",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.media.swcodec.apex",
+	overrides: ["com.android.media.swcodec"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.mediaprovider",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.mediaprovider.apex",
+	overrides: ["com.android.mediaprovider"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.neuralnetworks",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.neuralnetworks.apex",
+	overrides: ["com.android.neuralnetworks"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.os.statsd",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.os.statsd.apex",
+	overrides: ["com.android.os.statsd"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.permission",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.permission.apex",
+	overrides: ["com.android.permission"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.resolv",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.resolv.apex",
+	overrides: ["com.android.resolv"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.sdkext",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.sdkext.apex",
+	overrides: ["com.android.sdkext"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.telephony",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.telephony.apex",
+	overrides: ["com.android.telephony"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.tzdata2",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.tzdata2.apex",
+	overrides: ["com.android.tzdata"],
+	prefer: true,
+}
+
+prebuilt_apex {
+	name: "com.google.android.wifi",
+	owner: "extra",
+	src: "proprietary/system/apex/com.google.android.wifi.apex",
+	overrides: ["com.android.wifi"],
+	prefer: true,
+}

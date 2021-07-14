@@ -1,0 +1,25 @@
+# Blobs are extracted from redfin-user 11 RQ3A.210605.005 7349499 release-keys
+
+# Apex modules
+-system/apex/com.google.android.adbd.apex;OVERRIDES=com.android.adbd
+-system/apex/com.google.android.conscrypt.apex;OVERRIDES=com.android.conscrypt
+-system/apex/com.google.android.extservices.apex;OVERRIDES=com.android.extservices
+-system/apex/com.google.android.ipsec.apex;OVERRIDES=com.android.ipsec
+-system/apex/com.google.android.media.apex;OVERRIDES=com.android.media
+-system/apex/com.google.android.media.swcodec.apex;OVERRIDES=com.android.media.swcodec
+-system/apex/com.google.android.mediaprovider.apex;OVERRIDES=com.android.mediaprovider
+-system/apex/com.google.android.neuralnetworks.apex;OVERRIDES=com.android.neuralnetworks
+-system/apex/com.google.android.os.statsd.apex;OVERRIDES=com.android.os.statsd
+-system/apex/com.google.android.permission.apex;OVERRIDES=com.android.permission
+-system/apex/com.google.android.resolv.apex;OVERRIDES=com.android.resolv
+-system/apex/com.google.android.sdkext.apex;OVERRIDES=com.android.sdkext
+-system/apex/com.google.android.telephony.apex;OVERRIDES=com.android.telephony
+-system/apex/com.google.android.tzdata2.apex;OVERRIDES=com.android.tzdata
+-system/apex/com.google.android.wifi.apex;OVERRIDES=com.android.wifi
+
+# Module Metadata
+-product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk;OVERRIDES=ModuleMetadata;PRESIGNED
+
+# Permissions
+product/etc/sysconfig/google-rollback-package-whitelist.xml
+product/etc/sysconfig/google-staged-installer-whitelist.xml

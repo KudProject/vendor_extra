@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+# Copyright (C) 2021 KudProject Development
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,41 +15,19 @@
 # limitations under the License.
 #
 
+VENDOR_PATH := vendor/extra
+
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/extra/apex
+    $(VENDOR_PATH)/GoogleApex
 
 # Overlay
 PRODUCT_PACKAGES += \
     ApexOverlay
 
-# ModuleMetadata
-PRODUCT_PACKAGES += \
-    ModuleMetadataGoogle
-
-# Google Apexes
-PRODUCT_PACKAGES += \
-    com.google.android.adbd \
-    com.google.android.conscrypt \
-    com.google.android.extservices \
-    com.google.android.ipsec \
-    com.google.android.media \
-    com.google.android.media.swcodec \
-    com.google.android.mediaprovider \
-    com.google.android.neuralnetworks \
-    com.google.android.os.statsd \
-    com.google.android.permission \
-    com.google.android.resolv \
-    com.google.android.sdkext \
-    com.google.android.telephony \
-    com.google.android.tzdata2 \
-    com.google.android.wifi
-
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += vendor/extra/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/extra/sepolicy/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 
-# Sysconfig
-PRODUCT_PACKAGES += \
-    google-rollback-package-whitelist \
-    google-staged-installer-whitelist
+# Inherit Google Apex product configuration
+include $(VENDOR_PATH)/GoogleApex/GoogleApex-vendor.mk
