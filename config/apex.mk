@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
     ApexOverlay
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/GoogleApex/sepolicy/private
 
 # Inherit Google Apex product configuration
 include $(VENDOR_PATH)/GoogleApex/GoogleApex-vendor.mk
