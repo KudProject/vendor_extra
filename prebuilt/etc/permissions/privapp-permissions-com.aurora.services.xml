@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright (C) 2019 KudProject Development
+  ~  SPDX-License-Identifier: Apache-2.0
+  -->
+<permissions>
+    <privapp-permissions package="com.aurora.services">
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+    </privapp-permissions>
+</permissions>

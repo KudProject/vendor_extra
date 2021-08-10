@@ -14,3 +14,20 @@ android_app_import {
 		"Snap",
 	],
 }
+
+// Aurora Services
+android_app_import {
+    name: "AuroraServices",
+    apk: "priv-app/AuroraServices/AuroraServices.apk",
+    presigned: true,
+    privileged: true,
+    product_specific: true,
+    required: ["privapp-permissions-com.aurora.services.xml"],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-com.aurora.services.xml",
+    src: "etc/permissions/privapp-permissions-com.aurora.services.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}

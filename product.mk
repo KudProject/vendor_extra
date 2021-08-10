@@ -39,6 +39,7 @@ endif
 
 # Include all packages in this project
 PRODUCT_PACKAGES += \
+    AuroraServices \
     OpenCamera \
     TrichromeChrome \
     TrichromeWebView
