@@ -17,10 +17,6 @@
 
 VENDOR_PATH := vendor/extra
 
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    $(VENDOR_PATH)/GoogleApex
-
 # Overlay
 PRODUCT_PACKAGES += \
     ApexOverlay

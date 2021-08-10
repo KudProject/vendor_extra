@@ -3,9 +3,6 @@
 
 VENDOR_PATH := vendor/extra
 
-PRODUCT_SOONG_NAMESPACES += \
-    $(VENDOR_PATH)/GoogleCarrier
-
 # Overlay
 PRODUCT_PACKAGES += \
     CarrierSettingsOverlay

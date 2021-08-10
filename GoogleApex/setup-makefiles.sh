@@ -27,4 +27,11 @@ source "${HELPER}"
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
+# Warning headers and guards
+write_headers
+sed 's|device/|vendor/|' -i "${ANDROIDBP}" -i "${PRODUCTMK}"
+
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+
+# Finish
+write_footers
