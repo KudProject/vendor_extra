@@ -1,4 +1,4 @@
-# Blobs are extracted from redfin-user 11 RQ3A.210705.001 7380771 release-keys
+# Blobs are extracted from redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys
 
 # Apex modules
 -system/apex/com.google.android.adbd.apex;OVERRIDES=com.android.adbd
