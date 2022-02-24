@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(warning Inheriting vendor/extra for build.)
+
 # Always assume build type is CI
 DERP_BUILDTYPE := CI
 
