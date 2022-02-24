@@ -18,6 +18,13 @@ WITH_GMS_GO := true
 $(call inherit-product, vendor/gms_go/products/gms_go.mk)
 endif
 
+# post_process_props.py on some sources are completely dumb that this is needed
+ifeq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.adb.secure=1 \
+    persist.sys.usb.config=none
+endif
+
 # Include all packages from this project
 PRODUCT_PACKAGES += \
     GrapheneCamera
