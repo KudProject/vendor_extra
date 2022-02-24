@@ -17,3 +17,7 @@ ifneq ($(filter %ulysse,$(TARGET_PRODUCT)),)
 WITH_GMS_GO := true
 $(call inherit-product, vendor/gms_go/products/gms_go.mk)
 endif
+
+# Include all packages from this project
+PRODUCT_PACKAGES += \
+    GrapheneCamera
