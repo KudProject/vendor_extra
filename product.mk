@@ -6,9 +6,6 @@
 
 $(warning Inheriting vendor/extra for build.)
 
-# Always assume build type is CI
-DERP_BUILDTYPE := CI
-
 # Include KudProject signing keys configuration
 include vendor/kud/config/certs.mk
 
