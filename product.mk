@@ -15,13 +15,6 @@ WITH_GMS_GO := true
 $(call inherit-product, vendor/gms_go/products/gms_go.mk)
 endif
 
-# post_process_props.py on some sources are completely dumb that this is needed
-ifeq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.adb.secure=1 \
-    persist.sys.usb.config=none
-endif
-
 ifeq ($(TARGET_PRODUCT)-$(DERP_BUILDTYPE)-$(DERP_RELEASE),derp_alioth-SnuggyWuggy-true)
 OVERRIDE_OTA_CHANNEL := https://prod-ota.kudnet.id/derpfest/12/alioth.json
 PRODUCT_SYSTEM_PROPERTIES += \
