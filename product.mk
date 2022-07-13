@@ -22,6 +22,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.usb.config=none
 endif
 
+ifeq ($(TARGET_PRODUCT)-$(DERP_BUILDTYPE)-$(DERP_RELEASE),derp_alioth-SnuggyWuggy-true)
+OVERRIDE_OTA_CHANNEL := https://prod-ota.kudnet.id/derpfest/12/alioth.json
+PRODUCT_SYSTEM_PROPERTIES += \
+    derp.updater.uri?=$(OVERRIDE_OTA_CHANNEL)
+endif
+
 # Include all packages from this project
 PRODUCT_PACKAGES += \
     GrapheneCamera
